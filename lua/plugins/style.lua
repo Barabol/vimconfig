@@ -35,4 +35,10 @@ return {
 			return require("configs.gitsigns")
 		end,
 	},
+	{
+		"goolord/alpha-nvim",
+		config = function()
+			require("alpha").setup(require("configs.splashScreen").config)
+		end,
+	},
 }

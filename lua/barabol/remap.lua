@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 local keymap = vim.keymap
 
 keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Opens file explorer" })
@@ -14,3 +15,6 @@ keymap.set("n", "<leader>b", vim.cmd.NvimTreeFocus)
 
 keymap.set("n", "<leader>c", vim.cmd.ColorizerToggle)
 keymap.set("n", "<leader><leader>", vim.cmd.Telescope)
+
+keymap.set("t", "<C-c>", "clear<CR>")
+keymap.set("n", "<leader>u", vim.cmd.undo)
